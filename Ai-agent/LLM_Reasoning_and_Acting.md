@@ -64,22 +64,13 @@ problem solving.
 
 ## 2. ReAct vs Chain-of-Thought
 
-  -----------------------------------------------------------------------
-                          Chain-of-Thought        ReAct
-  ----------------------- ----------------------- -----------------------
-  Main idea               Reason through a        Reason + interact with
-                          problem step by step    tools/environment
-
-  External actions        Usually no              Yes
-
-  Tool use                Not required            Central concept
-
-  Observations            Usually no external     Yes
-                          observations            
-
-  Good for                Multi-step reasoning    Research, tool use,
-                                                  multi-step tasks
-  -----------------------------------------------------------------------
+ | Aspect | Chain-of-Thought | ReAct |
+|---|---|---|
+| **Main idea** | Reason through a problem step by step | Reason + interact with tools/environment |
+| **External actions** | Usually no | Yes |
+| **Tool use** | Not required | Central concept |
+| **Observations** | Usually no external observations | Yes |
+| **Good for** | Multi-step reasoning | Research, tool use, multi-step tasks |
 
 ### Simple memory trick
 
@@ -101,32 +92,14 @@ difficult reasoning.
 
 ### Comparison
 
-  -----------------------------------------------------------------------
-                          Reasoning Models        General/Standard Models
-  ----------------------- ----------------------- -----------------------
-  **Process**             Often allocate more     Usually optimized for
-                          computation to          broad, efficient
-                          difficult reasoning     generation
-
-  **Strengths**           Complex math, coding,   Chat, summarization,
-                          planning, multi-step    extraction, general
-                          tasks                   generation
-
-  **Latency**             Can be higher depending Often lower for
-                          on reasoning effort     comparable tasks
-
-  **Compute**             Can use more            Often uses less
-                          inference-time compute  inference-time compute
-
-  **Correctness**         Can improve             Can perform many
-                          difficult-task          reasoning tasks well
-                          performance, but not    
-                          guaranteed              
-
-  **Best use**            Complex tasks where     Fast/general tasks and
-                          additional reasoning is simpler workflows
-                          valuable                
-  -----------------------------------------------------------------------
+ | Aspect | Reasoning Models | General/Standard Models |
+|---|---|---|
+| **Process** | Often allocate more computation to difficult reasoning | Usually optimized for broad, efficient generation |
+| **Strengths** | Complex math, coding, planning, multi-step tasks | Chat, summarization, extraction, general generation |
+| **Latency** | Can be higher depending on reasoning effort | Often lower for comparable tasks |
+| **Compute** | Can use more inference-time compute | Often uses less inference-time compute |
+| **Correctness** | Can improve difficult-task performance, but not guaranteed | Can perform many reasoning tasks well |
+| **Best use** | Complex tasks where additional reasoning is valuable | Fast/general tasks and simpler workflows |
 
 ### Important
 
@@ -284,26 +257,13 @@ a guarantee of correctness** and can add latency and cost.
 
 ## 8. ReAct vs Tool Calling vs Agents
 
-  -----------------------------------------------------------------------
-  Concept                             Meaning
-  ----------------------------------- -----------------------------------
-  **Tool Calling**                    Model requests execution of an
-                                      external tool
-
-  **ReAct**                           Iterative reasoning + action +
-                                      observation framework
-
-  **Agent**                           System that can pursue a goal
-                                      through planning, tool use, state,
-                                      and iterative decisions
-
-  **RAG**                             Retrieves external information to
-                                      ground generation
-
-  **Chain-of-Thought**                Step-by-step reasoning approach
-                                      without requiring external tool
-                                      actions
-  -----------------------------------------------------------------------
+  | Concept | Meaning |
+|---|---|
+| **Tool Calling** | Model requests execution of an external tool |
+| **ReAct** | Iterative reasoning + action + observation framework |
+| **Agent** | System that can pursue a goal through planning, tool use, state, and iterative decisions |
+| **RAG** | Retrieves external information to ground generation |
+| **Chain-of-Thought** | Step-by-step reasoning approach without requiring external tool actions |
 
 These concepts can overlap.
 
