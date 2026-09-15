@@ -180,13 +180,13 @@ the part being optimized.
 
 ## Prompt tuning vs prompt engineering
 
-                      Prompt Engineering   Prompt Tuning
-  ------------------- -------------------- -------------------------
-  Prompt type         Human-written text   Learned vectors
-  Training required   No                   Yes
-  Base model          Frozen               Frozen
-  Human-readable      Yes                  Usually no
-  Main optimization   Human iteration      Gradient-based training
+| Feature | Prompt Engineering | Prompt Tuning |
+|---|---|---|
+| Prompt Type | Human-written text | Learned vectors |
+| Training Required | No | Yes |
+| Base Model | Frozen | Frozen |
+| Human-Readable | Yes | Usually no |
+| Main Optimization | Human iteration | Gradient-based training |
 
 ## Related soft-prompt methods
 
