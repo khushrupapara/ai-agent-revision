@@ -1,4 +1,4 @@
-# Revision Notes: Streaming Responses in AI
+# Streaming Responses in AI
 
 ## 1. What Is Streaming?
 
