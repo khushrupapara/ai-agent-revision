@@ -1,4 +1,4 @@
-# RAG (Retrieval-Augmented Generation) — Revision Notes
+# RAG (Retrieval-Augmented Generation)
 
 ---
 
